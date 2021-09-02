@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/my_custom_border">
+
+    <ImageView
+        android:id="@+id/imgCart"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="4dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/recommended1" />
+
+    <TextView
+        android:id="@+id/txtCart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="Vegetarian Food"
+        android:textColor="#f00"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/imgCart"
+        app:layout_constraintTop_toTopOf="@+id/imgCart" />
+
+    <TextView
+        android:id="@+id/txtCartPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="40 Rs"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:textAllCaps="false"
+        android:textColor="#000"
+        app:layout_constraintStart_toStartOf="@+id/txtCart"
+        app:layout_constraintTop_toBottomOf="@+id/txtCart" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imgCart"
+        app:srcCompat="@drawable/ic_baseline_delete_24" />
+
+    <ImageView
+        android:id="@+id/imgDecrease"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imgCart"
+        app:layout_constraintStart_toEndOf="@+id/imgCart"
+        app:layout_constraintTop_toBottomOf="@+id/txtCartPrice"
+        app:srcCompat="@drawable/ic_group_400" />
+
+    <TextView
+        android:id="@+id/txtCartCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="1"
+        android:textColor="#272670"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imgDecrease"
+        app:layout_constraintStart_toEndOf="@+id/imgDecrease"
+        app:layout_constraintTop_toTopOf="@+id/imgDecrease" />
+
+    <ImageView
+        android:id="@+id/imgIncrease"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/txtCartCount"
+        app:layout_constraintStart_toEndOf="@+id/txtCartCount"
+        app:layout_constraintTop_toTopOf="@+id/txtCartCount"
+        app:srcCompat="@drawable/ic_group_401" />
+</androidx.constraintlayout.widget.ConstraintLayout>
